@@ -1,0 +1,103 @@
+--------------------------------git(version controller)--------------------------------------------------
+
+
+configure your username and email:
+
+1.  git config --global user.name abc
+2.  git config --global user.email abc@gmail.com
+
+
+creating a directory and making it a git repository
+
+1.  mkdir my_repo
+2.  cd my_repo/
+3.  git init
+
+
+After making certain changes to existing files in directory or creating a new file in this git repo 
+
+1.  To add the files to the staging area
+
+    git add filename
+        
+         or
+    
+   git add .
+   
+2.  To commit the changes made with a message
+
+    git commit -m "my first commit"
+    
+3   To see the status of your repo
+
+    git status
+    
+4.  To see the activity log
+
+    git log
+    
+
+
+---------------------------------Linking local repo with github repo---------------------------------------
+
+
+Clone/Download the repo from github account.
+
+    git clone https://github.com/vhr121/GIT_TUTORIAL
+    
+Move to the GIT_TUTORIAL repo cloned/downloaded and do the necessary changes an modifications.
+
+    cd GIT_TUTORIAL
+    
+Add the files to staging area and commit
+
+    git add .
+    git commit -m "my second commit"
+
+Push the local changes onto the GITHUB master
+
+    git remote add origin "https://github.com/vhr121/GIT_TUTORIAL"
+    git push origin master
+    
+---------------------------------Pull----------------------------------------------------------------------
+
+inside the local git repo to get the updated latest repo on github 
+
+    git pull
+    
+    
+-------------------------------Merge------------------------------------------------------------------------
+
+create a branch from the master
+
+    git branch new_branch
+    git checkout new_branch
+    
+ (work in this new branch
+ 
+    Master
+    O------O
+           |
+           |
+           O-----O
+        new_branch
+    )
+    
+after commiting the branch to merge the branch to the master and delete the new_branch
+
+    git checkout master
+    git merge new_branch
+    git branch -d new_branch
+    
+--------------------------------TO go back to some checkpoint in time------------------------------
+find the checkpoint to reach the id
+
+    git log
+    
+    
+Go to that checkpoint
+
+    git checkout id[4digits enough]
+    
+
+
