@@ -99,5 +99,20 @@ Go to that checkpoint
 
     git checkout id[4digits enough]
     
+-----------------------------general work flow when working in group project--------------------------
+
+
+1.  Fork the project repo  that you like to work in this manner the copy of the repo will be added to your github account
+
+2.  clone the repo as mentioned above.
+
+3.  Play with it,,You know what I mean by this time :P.
+
+4.  commit and push (this will be reflected in your github account).
+
+5.  Raise a pull request(so that your changes can be reflected in the master repo)
+
+
+-----------------------------------------------Peace------------------------------------------------------
 
 
